@@ -1,0 +1,153 @@
+@font-face{
+	font-family: "src-regular";
+	src : url('../font/SourceSansPro-Regular.ttf');
+}
+@font-face{
+	font-family: "src-light";
+	src : url('../font/SourceSansPro-Light.ttf');
+}
+@font-face{
+	font-family: "src-bold";
+	src : url('../font/SourceSansPro-Bold.ttf');
+}
+@font-face{
+	font-family: "src-semibold";
+	src : url('../font/SourceSansPro-Semibold.ttf');
+}
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+	font-family: "src-regular";
+	letter-spacing: 0.6px;
+	font-size: 14px;
+}
+h1,h2,h3,h4,h5,h6,p,ul,ol,address{
+	margin: 0;
+	padding: 0;
+}
+header,footer,section,
+main,article,figure,
+address{
+	display: block;
+}
+.center{
+	text-align: center;
+}
+.left{
+	text-align: left;
+}
+.right{
+	text-align: right;
+}
+.inline li{
+	display: inline-block;
+}
+.unstyle{
+	list-style-type: none;
+}
+a:hover,a:visited,a:focus{
+	text-decoration: none;
+	outline: 0;
+}
+.bold{
+	font-family: "src-bold";
+}
+header{
+	background: #4486F7;
+	padding: 10px 0;
+}
+header a{
+	color: #FFF;
+	font-family: "src-bold";
+	font-size: 130%;
+}
+#userData{
+	padding: 20px 0;
+	background: #f7f7f7;
+}
+.user_info{
+	background: #FFF;
+	padding: 20px;
+	box-shadow: 0 0 1px 1px rgba(0,0,0,0.05);
+}
+#table thead{
+	font-family: "src-bold";
+	background: #4486F7;
+	color: #FFF;
+}
+.special_add{
+	padding: 0 0 5px;
+	cursor: pointer;
+	border: none;
+	font-family: "src-bold";
+	background: none;
+	margin: 0 0 5px;
+	position: relative;
+}
+.special_add:focus{
+	box-shadow: none;
+	outline: none;
+	outline: 0px;
+}
+.special_add:after{
+	position: absolute;
+	content: "";
+	width: 100px;
+	left: 0;
+	top: 100%;
+	height: 2px;
+	background: #4486F7;
+}
+.user_custom ul > li + li{
+	margin: 0 0 0 10px;
+}
+.custom_form{
+	padding: 20px;
+	margin: 20px 0 0;
+	box-shadow: 0 0 1px 1px rgba(0,0,0,0.1);
+}
+.custom_form .form-control, .serch_data .form-control{
+	border-radius: 0;
+	box-shadow: none;
+}
+.custom_form label{
+	color: #4486F7;
+	font-weight: normal;
+	margin: 0;
+}
+footer{
+	padding: 10px 0;
+}
+.btn_submit{
+    position: relative;
+    transform: perspective(1px) translateZ(0px);
+    transition-duration: 0.3s;
+    transition-property: color;
+    padding: 7px 15px;
+	border: none;
+	border-radius: 0;
+}
+.btn_submit:before {
+    background: #4486F7;
+    bottom: 0;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: scaleX(0);
+    transform-origin: 0 50% 0;
+    transition: transform 0.3s ease-out;
+    z-index: -1;
+}
+.btn_submit:hover{
+    color: white;
+}
+.btn_submit:hover::before{
+    transform: scaleX(1);
+}
+#table i{
+	cursor: pointer;
+}
